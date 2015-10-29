@@ -243,7 +243,7 @@ stopsignal=QUIT
 [program:myapp_phpresque_scheduledworker]
 command = /usr/bin/php /home/sites/myapp/prod/current/vendor/bcc/resque-bundle/BCC/ResqueBundle/bin/resque-scheduler
 user = myusername
-environment = APP_INCLUDE='/home/sites/myapp/prod/current/vendor/autoload.php',VERBOSE='1',RESQUE_PHP='/home/sites/myapp/prod/current/vendor/chrisboulton/php-resque/lib/Resque.php'
+environment = APP_INCLUDE='/home/sites/myapp/prod/current/vendor/autoload.php',VERBOSE='1'
 stopsignal=QUIT
 
 [group:myapp]
