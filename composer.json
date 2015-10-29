@@ -1,24 +1,38 @@
 {
-    "name": "bcc/resque-bundle",
+    "name": "nazo/resque-bundle",
     "type": "symfony-bundle",
     "description": "BCCResqueBundle",
     "keywords": ["resque job queue management"],
-    "homepage": "http://github.com/michelsalib/BCCResqueBundle",
+    "homepage": "http://github.com/nazo/BCCResqueBundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Michel Salib",
             "email": "michelsalib@hotmail.com",
             "homepage": "http://michelsalib.com"
+        },
+        {
+            "name": "Takuya Sato",
+            "email": "takuya0219@gmail.com"
         }
     ],
     "require": {
         "symfony/framework-bundle": ">=2.0,<3.0",
-        "chrisboulton/php-resque": "dev-master",
-        "chrisboulton/php-resque-scheduler": "dev-master"
+        "nazo/php-resque": "nazo-master",
+        "nazo/php-resque-scheduler": "nazo-master"
     },
     "autoload": {
         "psr-0": { "BCC\\ResqueBundle": "" }
     },
-    "target-dir": "BCC/ResqueBundle"
+    "target-dir": "BCC/ResqueBundle",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/nazo/php-resque.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/nazo/php-resque-scheduler.git"
+        }
+    ]
 }
