@@ -18,8 +18,8 @@
     ],
     "require": {
         "symfony/framework-bundle": ">=2.0,<3.0",
-        "nazo/php-resque": "nazo-master",
-        "nazo/php-resque-scheduler": "nazo-master"
+        "nazo/php-resque": "dev-nazo-master",
+        "nazo/php-resque-scheduler": "dev-nazo-master"
     },
     "autoload": {
         "psr-0": { "BCC\\ResqueBundle": "" }
